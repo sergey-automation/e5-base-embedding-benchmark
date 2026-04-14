@@ -57,6 +57,12 @@ Backend: torch (CPU)
 
 ![Throughput](figures/throughput_all_devices.png)
 
+## Key observations
+
+- GPU provides ~150× speedup vs CPU
+- Throughput saturates at batch 32–64 for modern GPUs
+- Larger batches do not significantly improve performance beyond saturation point
+
 ## Notes
 
 - throughput depends on batch size  
