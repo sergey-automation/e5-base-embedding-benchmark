@@ -69,3 +69,18 @@ Backend: torch (CPU)
 - CPU performance is significantly lower  
 
 ## Repository structure
+
+## Run benchmark
+
+```bash
+pip install sentence-transformers torch numpy tqdm orjson
+
+python scripts/block_embeddings_builder.py \
+  --chunks chunks_gold.jsonl \
+  --out-root out \
+  --base-name test_run \
+  --backend torch \
+  --batch 32 \
+  --block-size 5000 \
+  --block-start 0 \
+  --block-end -1
