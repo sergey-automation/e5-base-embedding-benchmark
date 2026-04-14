@@ -72,11 +72,11 @@ Backend: torch (CPU)
 ├── scripts/
 │   └── block_embeddings_builder.py
 └── figures/
-pip install sentence-transformers torch numpy tqdm orjson
 ```
 
 ## Run benchmark
 
+pip install sentence-transformers torch numpy tqdm orjson
 python scripts/block_embeddings_builder.py \
   --chunks chunks_gold.jsonl \
   --out-root out \
