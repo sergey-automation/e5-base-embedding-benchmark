@@ -54,6 +54,10 @@ Observed range on full runs: **2.9 – 3.0 chunks/s**
 Batch size for CPU tests: 128  
 Backend: torch (CPU)
 
+## Throughput comparison
+
+![Throughput](figures/throughput_all_devices.png)
+
 ## Notes
 
 - throughput depends on batch size  
