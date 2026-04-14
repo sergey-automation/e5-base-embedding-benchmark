@@ -27,9 +27,7 @@ Measure embedding speed (chunks per second) across different hardware using:
 - block-based embedding generation  
 - block size: 5000  
 - resume support  
-- normalized embeddings
-- backend: torch  
-- block size: 5000  
+- normalized embeddings  
 
 ## Results (batch = 32)
 
@@ -51,8 +49,7 @@ CPU embedding performance was measured on full dataset runs:
 - Ryzen 5 5625U: ~2.99 chunks/s  
 - Intel i5-4570: ~3.03 chunks/s  
 
-Observed range on full runs: **2.9 – 3.0 chunks/s**
-
+Observed range on full runs: **2.9–3.0 chunks/s**  
 Batch size for CPU tests: 128  
 Backend: torch (CPU)
 
@@ -68,17 +65,17 @@ Backend: torch (CPU)
 
 ## Repository structure
 
+```text
 .
 ├── README.md
 ├── embed_reports_merged.json
 ├── scripts/
-│ └── block_embeddings_builder.py
+│   └── block_embeddings_builder.py
 └── figures/
+pip install sentence-transformers torch numpy tqdm orjson
+```
 
 ## Run benchmark
-
-```bash
-pip install sentence-transformers torch numpy tqdm orjson
 
 python scripts/block_embeddings_builder.py \
   --chunks chunks_gold.jsonl \
