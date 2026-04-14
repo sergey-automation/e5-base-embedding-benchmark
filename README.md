@@ -29,18 +29,18 @@ Measure embedding speed (chunks per second) across different hardware using:
 - resume support  
 - normalized embeddings  
 
-## Results (best per device)
+## Results (batch = 32)
 
-| Device | Batch | Chunks/s |
-|--------|------:|---------:|
-| RTX 5090 | 64 | ~457 |
-| RTX 5080 | 32 | ~245 |
-| RTX 5070 Ti | 24 | ~219 |
-| RTX 5060 Ti | 4 | ~121 |
-| Tesla V100 | 32 | ~123 |
-| RTX 3090 | 1 | ~100 |
-| Ryzen 5 5625U (CPU) | 128 | ~3.0 |
-| i5-4570 (CPU) | 128 | ~3.0 |
+| Device | Chunks/s |
+|--------|---------:|
+| RTX 5090 | ~454 |
+| RTX 5080 | ~245 |
+| RTX 5070 Ti | ~216 |
+| RTX 5060 Ti | ~114 |
+| Tesla V100 | ~124 |
+| RTX 3090 | ~95 |
+| Ryzen 5 5625U (CPU) | ~3.0 |
+| i5-4570 (CPU) | ~3.0 |
 
 ## CPU notes
 
