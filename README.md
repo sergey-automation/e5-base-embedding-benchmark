@@ -1,4 +1,4 @@
-# E5 Base Embedding Benchmark
+# E5 Base Embedding Throughput Benchmark (CPU vs GPU)
 
 Benchmarking embedding throughput for `intfloat/multilingual-e5-base` on CPU and GPU.
 
