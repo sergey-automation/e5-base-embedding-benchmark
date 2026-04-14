@@ -27,7 +27,11 @@ Measure embedding speed (chunks per second) across different hardware using:
 - block-based embedding generation  
 - block size: 5000  
 - resume support  
-- normalized embeddings  
+- normalized embeddings
+- backend: torch  
+- block size: 5000  
+- dataset size: 117,800 chunks  
+- average chunk: ~160 words (~352 tokens)
 
 ## Results (batch = 32)
 
