@@ -30,8 +30,6 @@ Measure embedding speed (chunks per second) across different hardware using:
 - normalized embeddings
 - backend: torch  
 - block size: 5000  
-- dataset size: 117,800 chunks  
-- average chunk: ~160 words (~352 tokens)
 
 ## Results (batch = 32)
 
@@ -69,6 +67,13 @@ Backend: torch (CPU)
 - CPU performance is significantly lower  
 
 ## Repository structure
+
+.
+├── README.md
+├── embed_reports_merged.json
+├── scripts/
+│ └── block_embeddings_builder.py
+└── figures/
 
 ## Run benchmark
 
