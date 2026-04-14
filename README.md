@@ -59,9 +59,15 @@ Backend: torch (CPU)
 
 ## Key observations
 
-- GPU provides ~150× speedup vs CPU
-- Throughput saturates at batch 32–64 for modern GPUs
-- Larger batches do not significantly improve performance beyond saturation point
+**CPU vs GPU**
+
+- GPU provides ~30×–150× speedup vs CPU across tested devices
+
+**GPU scaling behavior**
+
+- GPU throughput is substantially lower at small batch sizes and increases as the workload grows
+- For the tested setup, performance typically approaches saturation at batch 32–64 (~11k–22.5k tokens per inference batch)
+- Beyond the saturation region, larger batches bring little additional throughput improvement
 
 ## Notes
 
