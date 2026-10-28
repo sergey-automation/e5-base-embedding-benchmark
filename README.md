@@ -39,6 +39,7 @@ Measure embedding speed (chunks per second) across different hardware using:
 | RTX 5060 Ti | ~114 |
 | Tesla V100 | ~124 |
 | RTX 3090 | ~95 |
+| P104-100 (Pascal) | ~29 |
 | Ryzen 5 5625U (CPU) | ~3.0 |
 | i5-4570 (CPU) | ~3.0 |
 
