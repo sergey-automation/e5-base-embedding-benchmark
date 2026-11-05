@@ -1,0 +1,21 @@
+{
+  "factory": "RR768,IVF4096,RaBitQ2",
+  "metric": "inner_product",
+  "vectors": 4304468,
+  "dimension": 768,
+  "nlist": 4096,
+  "rabitq_bits": 2,
+  "rotation": "RR768",
+  "train_max": 200000,
+  "actual_training_vectors": 199980,
+  "add_batch": 10000,
+  "omp_threads": 4,
+  "train_seconds_this_run": 89.1140356999822,
+  "add_seconds_this_run": 325.1622324999771,
+  "added_this_run": 4304468,
+  "index_size_bytes": 961958184,
+  "index_size_gib": 0.8958933725953102,
+  "final_write_seconds": 3.439731299993582,
+  "final_verify_seconds": 0.7907801000110339,
+  "final_index": "F:\\RAG_checkpoints\\ivf4096_rabitq2_cpu\\ivf4096_rabitq2.index"
+}
